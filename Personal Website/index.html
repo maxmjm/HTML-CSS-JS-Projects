@@ -3,53 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
+    <title>Maxime Morard</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive-styles.css" />
 </head>
 <body>
 
     <!-- Desktop Navigation -->
-    <nav id="desktop-nav">
-        <div class="logo">Maxime Morard</div>
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#blogs">Blogs</a></li>
+    <nav id="desktop-navigation">
+        <div class="brand-logo">Maxime Morard</div>
+        <ul class="navigation-links">
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#projects-section">Projects</a></li>
+            <li><a href="#blogs-section">Blogs</a></li>
         </ul>
     </nav>
 
-    <!-- Hamburger Navigation -->
-    <nav id="hamburger-nav">
-        <div class="logo">Maxime Morard</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+    <!-- Mobile Navigation -->
+    <nav id="mobile-navigation">
+        <div class="brand-logo">Maxime Morard</div>
+        <div class="menu-container">
+            <div class="hamburger-icon" onclick="toggleMobileMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <ul class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#blogs" onclick="toggleMenu()">Blogs</a></li>
+            <ul class="mobile-menu-links">
+                <li><a href="#about-section" onclick="toggleMobileMenu()">About</a></li>
+                <li><a href="#projects-section" onclick="toggleMobileMenu()">Projects</a></li>
+                <li><a href="#blogs-section" onclick="toggleMobileMenu()">Blogs</a></li>
             </ul>
         </div>
     </nav>
-    
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-picture.png" alt="Profile Picture"/>
+
+    <!-- Profile Section -->
+    <section id="profile-section">
+        <div class="profile-picture-container">
+            <img src="./assets/profile-picture.png" alt="Profile picture" />
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Maxime Morard</h1>
-            <p class="section__text__p2">Software Engineer</p>
-            <div class="button-container">
-                <button class="button button_color_2" onclick="window.open('./assets/cv.pdf')">Download CV</button>
+        <div class="profile-description">
+            <p class="greeting-text">Hello, I'm</p>
+            <h1 class="name-title">Maxime Morard</h1>
+            <p class="job-title">Software Engineer</p>
+            <div class="action-buttons">
+                <button class="button button-secondary" onclick="window.open('./assets/cv.pdf')">Download CV</button>
+                <button class="button button-primary" onclick="location.href='./#contact-section'">Contact Info</button>
+            </div>
+            <div id="social-icons">
+                <img src="./assets/linkedin-icon.png" 
+                     alt="LinkedIn profile" 
+                     class="social-icon" 
+                     onclick="location.href='https://linkedin.com/in/maximemorard'" />
             </div>
         </div>
     </section>
 
-    <script src="script.js"> </script>
+    <script src="main.js"></script>
 </body>
 </html>
