@@ -25,6 +25,10 @@ a,
 }
 
 /* Desktop Navigation Styles */
+#profile {
+  position: relative;
+}
+
 nav,
 .nav-links {
   display: flex;
