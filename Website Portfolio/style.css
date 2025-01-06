@@ -368,6 +368,27 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+/* Blogs Section */
+#blogs {
+  position: relative;
+}
+
+.color-container {
+  color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.blog-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.blog-title {
+  margin: 1rem;
+  color: black;
+}
+
 /* Contact Section */
 #contact {
   display: flex;
