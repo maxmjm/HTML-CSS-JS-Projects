@@ -1,91 +1,93 @@
 /* Global Styles */
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    color: black;
-    background-color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: black;
+  background-color: white;
 }
 
 /* Sidebar Styles */
 .sidebar {
-    width: 400px;
-    height: 100vh;
-    padding: 100px 0px;
-    position: fixed;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  width: 400px;
+  height: 100vh;
+  padding: 100px 0px;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* Profile Picture */
 .profile-pic {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    margin-bottom: 5px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-bottom: 5px;
 }
 
 /* Name */
 .name {
-    color: white;
-    font-size: 1.75rem;
-    margin-bottom: 5px;
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: 5px;
 }
 
 /* Job Title */
 .job-title {
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 25px;
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 25px;
 }
 
 /* Social Icons */
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 16px
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
 
-.linkedin-icon, .cv-icon, .github-icon {
-    height: 20px;
-    width: px;
+.linkedin-icon,
+.cv-icon,
+.github-icon {
+  height: 20px;
+  width: px;
 }
 
 .social-icons a:hover {
-    transform: scale(1.4); /* Increment size of icon for emphasis */
-    transition: transform 0.3s ease;
+  transform: scale(1.4); /* Increment size of icon for emphasis */
+  transition: transform 0.3s ease;
 }
 
 /* Navigation Menu */
 .menu {
-    margin-top: 60px;
-    width: 100%;
+  margin-top: 60px;
+  width: 100%;
 }
 
 .menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .menu a {
-    display: inline-block;
-    width: 100%;
-    padding: 15px 0;
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    transition: background-color 0.3s, color 0.3s;
-    position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+  position: relative;
 }
 
 .menu a:hover {
-    background-color: white;
-    color: black; /* Change text color on hover */
+  background-color: white;
+  color: black; /* Change text colour on hover */
 }
