@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Profile Picture */
@@ -100,4 +101,186 @@ body {
     padding: 50px 75px;
     height: 100vh;
     overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Experience Section */
+#experience {
+    text-align: center;
+    width: 100%;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* Space between the two sections */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Employment History DNA */
+.dna-section {
+    flex: 1;
+    text-align: center;
+}
+
+/* Tech Stacks Atom */
+.atom-section {
+    flex: 1; /* Take up equal horizontal space */
+    text-align: center;
+}
+
+.atom {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto; /* Center atom within container */
+}
+
+.atom-core {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: rotate-orbit linear infinite;
+}
+
+.orbit-1 {
+    width: 120px;
+    height: 120px;
+    animation-duration: 4s;
+}
+
+.orbit-2 {
+    width: 200px;
+    height: 200px;
+    animation-duration: 6s;
+}
+
+.orbit-3 {
+    width: 280px;
+    height: 280px;
+    animation-duration: 8s;
+}
+
+.orbit-icon-1 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.orbit-icon-2 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.orbit-icon-3 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.orbit-icon-4 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(120deg);
+}
+
+.orbit-icon-5 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.orbit-icon-6 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(240deg);
+}
+
+.orbit-icon-7 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.orbit-icon-8 {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 50%;
+    transform-origin: center;
+    animation: electron-spin linear infinite;
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+@keyframes rotate-orbit {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
